@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoCuraitor - Privacy Policy</title>
+  <meta name="description" content="PhotoCuraitor privacy policy in 8 languages.">
+  <style>
+    :root {
+      --bg: #0b0b10; --card: #14141c; --fg: #e8e8f0;
+      --muted: #9a9ab0; --accent: #ff8a5b; --accent2: #ff5e5e;
+      --border: #23232e;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+      line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 680px; margin: 0 auto; padding: 64px 22px 80px;
+      text-align: center;
+    }
+    .eyebrow {
+      font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 14px;
+    }
+    h1 {
+      font-size: 40px; margin: 0 0 10px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      letter-spacing: -0.01em;
+    }
+    p.sub { color: var(--muted); margin: 0 0 36px; font-size: 15px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+    }
+    @media (min-width: 560px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+    a.lang {
+      display: block; padding: 16px 10px; text-decoration: none;
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; color: var(--fg); transition: all .15s ease;
+    }
+    a.lang:hover {
+      border-color: var(--accent); transform: translateY(-1px);
+      background: #1a1a24;
+    }
+    a.lang .code {
+      font-size: 11px; color: var(--muted); letter-spacing: .08em;
+      text-transform: uppercase; display: block; margin-bottom: 4px;
+    }
+    a.lang .name { font-size: 15px; font-weight: 600; }
+    footer {
+      margin-top: 48px; color: var(--muted); font-size: 13px;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+  <script>
+    // Auto-redirect to the user's preferred language on first visit.
+    (function () {
+      var supported = ['en','tr','de','es','fr','ru','zh','ar'];
+      var langs = navigator.languages || [navigator.language || 'en'];
+      for (var i = 0; i < langs.length; i++) {
+        var code = (langs[i] || '').toLowerCase().split('-')[0];
+        if (code === 'zh') { // map zh-CN, zh-Hans, zh-TW all to simplified
+          location.replace('privacy_zh.html'); return;
+        }
+        if (supported.indexOf(code) >= 0) {
+          location.replace('privacy_' + code + '.html'); return;
+        }
+      }
+      // Fallback: stay on this page so the user can pick manually.
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">PhotoCuraitor</p>
+    <h1>Privacy Policy</h1>
+    <p class="sub">Choose your language</p>
+    <div class="grid">
+      <a class="lang" href="privacy_en.html"><span class="code">EN</span><span class="name">English</span></a>
+      <a class="lang" href="privacy_tr.html"><span class="code">TR</span><span class="name">Türkçe</span></a>
+      <a class="lang" href="privacy_de.html"><span class="code">DE</span><span class="name">Deutsch</span></a>
+      <a class="lang" href="privacy_es.html"><span class="code">ES</span><span class="name">Español</span></a>
+      <a class="lang" href="privacy_fr.html"><span class="code">FR</span><span class="name">Français</span></a>
+      <a class="lang" href="privacy_ru.html"><span class="code">RU</span><span class="name">Русский</span></a>
+      <a class="lang" href="privacy_zh.html"><span class="code">ZH</span><span class="name">简体中文</span></a>
+      <a class="lang" href="privacy_ar.html"><span class="code">AR</span><span class="name">العربية</span></a>
+    </div>
+    <footer>Curated by AI. Loved by you.</footer>
+  </main>
+</body>
+</html>
