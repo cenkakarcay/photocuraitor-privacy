@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoCuraitor - Soporte</title>
+  <meta name="description" content="PhotoCuraitor Soporte">
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --card: #14141c;
+      --fg: #e8e8f0;
+      --muted: #9a9ab0;
+      --accent: #ff8a5b;
+      --accent2: #ff5e5e;
+      --border: #23232e;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+                   "Noto Sans Arabic", "Noto Sans SC", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px; margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+    header {
+      padding-bottom: 24px; border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 36px; margin: 0 0 8px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      letter-spacing: -0.01em;
+    }
+    .eyebrow {
+      font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 14px;
+    }
+    h2 {
+      font-size: 18px; margin: 32px 0 10px; color: var(--fg);
+      letter-spacing: -0.005em;
+    }
+    p { margin: 0 0 12px; color: var(--fg); }
+    details {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 14px 18px; margin: 10px 0;
+    }
+    details[open] { border-color: var(--accent); }
+    summary {
+      cursor: pointer; font-weight: 600; list-style: none;
+      color: var(--fg); padding: 2px 0;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details p { color: var(--muted); margin: 10px 0 0; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 20px; margin: 18px 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      main { padding: 32px 18px 64px; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">PhotoCuraitor</p>
+      <h1>Soporte</h1>
+    </header>
+
+    <h2>Estamos para ayudarte.</h2>
+    <p>¿Necesitas ayuda con PhotoCuraitor, encontraste un error o tienes una sugerencia? Escríbenos y te responderemos pronto.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">Contacto</h2>
+      <p>Correo: <a href="mailto:cenk.akarcay@gmail.com">cenk.akarcay@gmail.com</a>. Solemos responder en 1-2 días hábiles.</p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿PhotoCuraitor sube mis fotos?</summary><p>No. Todo se ejecuta en tu iPhone. Las fotos no salen de tu dispositivo.</p></details>
+    <details><summary>¿Cómo funciona la puntuación por IA?</summary><p>PhotoCuraitor usa aprendizaje automático en el dispositivo para evaluar nitidez, composición, exposición y similitud. No necesita conexión a internet.</p></details>
+    <details><summary>¿Las fotos eliminadas desde la app se borran para siempre?</summary><p>Las fotos borradas pasan al álbum "Eliminados recientemente" de iOS, donde permanecen 30 días. Puedes restaurarlas desde la app Fotos durante ese periodo.</p></details>
+    <details><summary>¿Por qué necesita acceso a mi Fototeca?</summary><p>Para leer tus fotos, puntuarlas, agruparlas y permitirte eliminar las que no quieres. Sin acceso, la app no tiene con qué trabajar.</p></details>
+    <details><summary>¿Ofrecen reembolsos?</summary><p>Los reembolsos los gestiona Apple. Visita reportaproblem.apple.com y selecciona tu compra de PhotoCuraitor para solicitarlo.</p></details>
+    <details><summary>¿Cómo restauro mis compras en un nuevo dispositivo?</summary><p>Abre PhotoCuraitor, ve a Ajustes y toca "Restaurar compras". Inicia sesión con el mismo Apple ID que usaste para comprar la app.</p></details>
+
+    <h2>Ideas e informes de errores</h2>
+    <p>¿Algo no funciona o tienes una idea para mejorar PhotoCuraitor? Envía una descripción breve (y captura si procede) a <a href="mailto:cenk.akarcay@gmail.com">cenk.akarcay@gmail.com</a>. Tu opinión moldea la hoja de ruta.</p>
+
+    <h2>Privacidad</h2>
+    <p>Consulta nuestra <a href="privacy_es.html">Política de privacidad</a>.</p>
+
+    <footer>PhotoCuraitor - Curado por IA. Amado por ti.</footer>
+  </main>
+</body>
+</html>

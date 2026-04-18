@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoCuraitor - Destek</title>
+  <meta name="description" content="PhotoCuraitor Destek">
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --card: #14141c;
+      --fg: #e8e8f0;
+      --muted: #9a9ab0;
+      --accent: #ff8a5b;
+      --accent2: #ff5e5e;
+      --border: #23232e;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+                   "Noto Sans Arabic", "Noto Sans SC", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px; margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+    header {
+      padding-bottom: 24px; border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 36px; margin: 0 0 8px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      letter-spacing: -0.01em;
+    }
+    .eyebrow {
+      font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 14px;
+    }
+    h2 {
+      font-size: 18px; margin: 32px 0 10px; color: var(--fg);
+      letter-spacing: -0.005em;
+    }
+    p { margin: 0 0 12px; color: var(--fg); }
+    details {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 14px 18px; margin: 10px 0;
+    }
+    details[open] { border-color: var(--accent); }
+    summary {
+      cursor: pointer; font-weight: 600; list-style: none;
+      color: var(--fg); padding: 2px 0;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details p { color: var(--muted); margin: 10px 0 0; }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 18px 20px; margin: 18px 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+      color: var(--muted); font-size: 13px; text-align: center;
+    }
+    @media (max-width: 480px) {
+      main { padding: 32px 18px 64px; }
+      h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">PhotoCuraitor</p>
+      <h1>Destek</h1>
+    </header>
+
+    <h2>Yardım için buradayız.</h2>
+    <p>PhotoCuraitor ile ilgili soru, hata ya da öneriniz mi var? Bize yazın, en kısa sürede dönüş yapalım.</p>
+
+    <div class="card">
+      <h2 style="margin-top:0">İletişim</h2>
+      <p>E-posta: <a href="mailto:cenk.akarcay@gmail.com">cenk.akarcay@gmail.com</a>. Genellikle 1-2 iş günü içinde yanıt veriyoruz.</p>
+    </div>
+
+    <h2>Sıkça sorulan sorular</h2>
+    <details><summary>PhotoCuraitor fotoğraflarımı sunucuya yüklüyor mu?</summary><p>Hayır. Her şey iPhone'unuzda çalışır. Fotoğraflar cihazınızdan çıkmaz.</p></details>
+    <details><summary>Yapay zeka puanlaması nasıl çalışıyor?</summary><p>PhotoCuraitor; netlik, kompozisyon, pozlama ve benzerliği değerlendirmek için cihaz üzerinde çalışan makine öğrenmesi kullanır. İnternet bağlantısı gerekmez.</p></details>
+    <details><summary>Uygulamadan silinen fotoğraflar kalıcı mı siliniyor?</summary><p>Sildiğiniz fotoğraflar iOS'un "Son Silinenler" albümüne taşınır ve 30 gün boyunca orada tutulur. Bu süre içinde Fotoğraflar uygulamasından geri alabilirsiniz.</p></details>
+    <details><summary>Neden Fotoğraflara erişim izni istiyor?</summary><p>Fotoğrafları okumak, puanlamak, gruplamak ve istemediklerinizi silmeniz için bu izin gereklidir. Erişim olmadan uygulamanın üzerinde çalışacağı bir şey yoktur.</p></details>
+    <details><summary>İade mümkün mü?</summary><p>İadeleri Apple yönetir. reportaproblem.apple.com adresine girip PhotoCuraitor satın alımınızı seçerek talep oluşturabilirsiniz.</p></details>
+    <details><summary>Yeni cihazda satın alımlarımı nasıl geri yüklerim?</summary><p>PhotoCuraitor'ı açın, Ayarlar'a gidin ve "Satın Alımları Geri Yükle"ye dokunun. Uygulamayı satın aldığınız Apple ID ile giriş yapmış olduğunuzdan emin olun.</p></details>
+
+    <h2>Öneri ve hata bildirimi</h2>
+    <p>Çalışmayan bir şey mi var, ya da PhotoCuraitor'ı daha iyi hâle getirecek bir fikriniz mi? Kısa bir açıklama (ve varsa ekran görüntüsü) ile <a href="mailto:cenk.akarcay@gmail.com">cenk.akarcay@gmail.com</a> adresine yazın. Geri bildirimleriniz yol haritasını şekillendiriyor.</p>
+
+    <h2>Gizlilik</h2>
+    <p><a href="privacy_tr.html">Gizlilik Politikası</a>'na göz atın.</p>
+
+    <footer>PhotoCuraitor - Yapay zeka seçti, sen beğen.</footer>
+  </main>
+</body>
+</html>
